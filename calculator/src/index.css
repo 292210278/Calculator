@@ -37,6 +37,7 @@ body {
   cursor: pointer;
   background-color: #fefcfe;
   transition: all 0.2s linear;
+  overflow: hidden;
 }
 
 .active {
@@ -45,4 +46,8 @@ body {
 
 h1 {
   font-size: 24px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
 }

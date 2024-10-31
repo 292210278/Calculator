@@ -12,16 +12,20 @@ function App() {
       onClick={(e) => {
         switch (e.target.innerHTML) {
           case "IBM计算":
-            setActive("weight");
+            if (active === "weight") {
+              setActive("");
+            } else setActive("weight");
             break;
           case "汇率计算":
-            setActive("exchangeRate");
+            if (active === "exchangeRate") {
+              setActive("");
+            } else setActive("exchangeRate");
             break;
           case "进制转换":
-            setActive("hex");
+            if (active === "hex") {
+              setActive("");
+            } else setActive("hex");
             break;
-          default:
-            setActive("");
         }
       }}
     >
